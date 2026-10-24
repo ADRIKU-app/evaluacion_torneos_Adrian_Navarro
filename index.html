@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="dashboard.js"></script>
+        <script src="utilitarios.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1>Dasboard de Torneos Gamer</h1>
+        <h3>Formulario</h3>
+
+        <div>
+        <p>Nombre del torneo</p>
+        <input type="text" id="txtNombreTorneo">
+        </div>
+
+        <div>
+        <p>Selecciona la Categoría</p>
+        <p>
+            <h4>Categorías disponibles:</h4>
+            <label>Lucha, Estrategia, Arcade, Deportes y Aventura</label>
+        </p>
+        <input type="text" id="txtCategoria" placeholder="Ej: Lucha">
+        </div>
+
+        <div>
+        <p>Participantes</p>
+        <input type="number" id="participantes" placeholder="1-100">
+        </div>
+
+        <div>
+        <p>Valor de inscripción</p>
+        <input type="number" id="valor" placeholder="Ej: $10">
+        </div>
+
+        <div>
+        <p>E-mail organizador</p>
+        <input type="email" id="txtEmail" placeholder="email@gmail.com">
+        </div>
+
+        <div>
+            <P>
+            <button onclick="registrarTorneo()">
+                REGISTRAR TORNEO
+            </button>
+            </p>
+        </div>
+
+        <section>
+            <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Participantes</th>
+        <th>Valor de Inscripción</th>
+        <th>email</th>
+        <th>Recaudación estimada</th>
+      </tr>
+    </thead>
+    <tbody id="tablaTorneos">
+    </tbody>
+  </table>
+        </section>
+
+    </body>
+</html>
